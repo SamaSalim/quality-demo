@@ -5,7 +5,7 @@ public class BankServiceTest {
 
     @Test
     void testTransfer() {
-        BankAccount acc1 = new BankAccount(200);
+        BankAccount acc1 = new BankAccount(2110);
         BankAccount acc2 = new BankAccount(100);
 
         BankService service = new BankService();
