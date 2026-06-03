@@ -1,9 +1,10 @@
-import lombok.RequiredArgsConstructor;
-
-@RequiredArgsConstructor
 public class BankService {
     
     private final TransactionLogger logger;
+
+    public BankService(TransactionLogger logger) {
+        this.logger = logger;
+    }
 
     public void transfer(BankAccount from, BankAccount to, double amount) {
         from.withdraw(amount);
